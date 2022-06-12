@@ -4,7 +4,7 @@
   background-color: $primary;
   color: $fontColor;
   height: max-content;
-  padding: 1.25rem;
+  padding: 1.25rem 0;
   width: 100%;
   position: sticky;
   top: 0;
@@ -15,6 +15,8 @@
     align-items: center;
     flex-direction: column;
     gap: 1.25rem;
+    width: 90%;
+    margin: 0 auto;
 
     &.title {
       font-size: 2.25rem;

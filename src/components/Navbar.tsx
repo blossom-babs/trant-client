@@ -1,3 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
+import { faMicrophone } from "@fortawesome/free-solid-svg-icons"
+
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -10,11 +15,11 @@ const Navbar = () => {
       </ul>
       {/* replace socal media with names */}
       <ul>
-        <li>LinkedIn</li>
-        <li>Twitter</li>
-        <li>Instagram</li>
-        <li>Mail</li>
-        <li>Podcast</li>
+        <li><a href="http://"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+        <li><a href="http://"><FontAwesomeIcon icon={faTwitter} /></a></li>
+        <li><a href="http://"><FontAwesomeIcon icon={faInstagram} /></a></li>
+        <li><a href="http://"><FontAwesomeIcon icon={faEnvelope} /></a></li>
+        <li><a href="http://"><FontAwesomeIcon icon={faMicrophone} /></a></li>
       </ul>
         </div>
     </div>
@@ -22,3 +27,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+
