@@ -20,5 +20,10 @@ body {
   background-color: #ffffff;
   background-image: url('../../public/images/asfalt-dark.png');
   font-family: $fontHeading;
+
+  @media screen and (min-width:1500px){
+    width: 1140px;
+    margin: 0 auto
+  }
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
