@@ -1,0 +1,20 @@
+@use '../components/'as *;
+
+.navbar {
+  background-color: $primary;
+  color: $fontColor;
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.title {
+      font-size: 1.25rem;
+    }
+  }
+}

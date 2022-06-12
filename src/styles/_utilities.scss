@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora&display=swap');
+
+$fontOne: 'Josefin Sans',
+sans-serif;
+$fontTwo: 'Lora',
+serif;
+$primary: #000000;
+$fontColor: #ffffff;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  background-image: url('../../public/images/asfalt-dark.png');
+  font: $fontOne;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
