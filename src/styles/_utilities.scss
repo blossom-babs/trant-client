@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans&family=Lora&display=swap');
 
 $fontOne: 'Josefin Sans',
 sans-serif;
 $fontTwo: 'Lora',
 serif;
+$fontHeading: 'Architects Daughter', cursive;
 $primary: #000000;
 $fontColor: #ffffff;
 
@@ -18,6 +19,6 @@ body {
   margin: 0;
   background-color: #ffffff;
   background-image: url('../../public/images/asfalt-dark.png');
-  font: $fontOne;
+  font-family: $fontHeading;
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }

@@ -3,7 +3,8 @@
 .navbar {
   background-color: $primary;
   color: $fontColor;
-  height: 100px;
+  height: max-content;
+  padding: 1.25rem;
   width: 100%;
   position: sticky;
   top: 0;
@@ -12,9 +13,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 1.25rem;
 
     &.title {
-      font-size: 1.25rem;
+      font-size: 2.25rem;
     }
   }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+
+    li {
+      font-size: 1rem;
+    }
+  }
+
+  &-navigation {}
 }
