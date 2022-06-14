@@ -1,11 +1,11 @@
 import {Navbar} from './components';
-import {Home} from './pages';
+import {Home, Single} from './pages';
 
 function App() {
   return (
    <>
    <Navbar/>
-   <Home/>
+   <Single/>
    </>
   );
 }

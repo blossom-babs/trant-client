@@ -1,14 +1,12 @@
-import { Posts, Sidebar } from "../components"
+import { Posts, Sidebar } from '../components';
 
 const Home = () => {
-  return (
-    <>
-    <div className="home">
-      <Sidebar/>
-      <Posts/>
-    </div>
-    </>
-  )
-}
+	return (
+		<div className="home">
+			<Sidebar />
+			<Posts />
+		</div>
+	);
+};
 
-export default Home
+export default Home;
