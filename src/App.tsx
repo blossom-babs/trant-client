@@ -1,11 +1,11 @@
 import {Navbar} from './components';
-import {Home, Single, Write} from './pages';
+import {Home, Settings, Single, Write} from './pages';
 
 function App() {
   return (
    <>
    <Navbar/>
-   <Write/>
+   <Settings/>
    </>
   );
 }
