@@ -3,6 +3,8 @@
 //components
 @use './components/navbar';
 @use './components/sidebar';
+@use './components/posts';
+@use './components/post';
 
 //pages
 @use './pages/home';

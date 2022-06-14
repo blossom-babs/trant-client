@@ -1,13 +1,22 @@
+// .home {
+//   display: grid;
+//   justify-content: space-between;
+//   width: 90%;
+//   margin: 0 auto;
+//   gap: 1.25rem;
+//   margin-top: 2rem;
+
+//   @media screen and (min-width:1024px) {
+
+//     grid-template-columns: 20vw 1fr;
+//   }
+// }
+
 .home {
-  display: grid;
-  justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
-  gap: 1.25rem;
-  margin-top: 2rem;
-
-  @media screen and (min-width:1024px) {
-
-    grid-template-columns: 20vw 1fr;
+	display: flex;
+	width: 90%;
+	margin: 3rem auto;
+  @media screen and (max-width:768px){
+    flex-direction: column;
   }
 }

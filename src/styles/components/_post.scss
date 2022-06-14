@@ -1,0 +1,60 @@
+.post {
+	@media screen and (min-width: 768px) {
+		width: 300px;
+	}
+
+	&-action {
+		display: flex;
+		gap: 1rem;
+		cursor: pointer;
+	}
+
+	&-desc {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		line-height: 24px;
+	}
+
+	&-img {
+		width: 100%;
+		height: 280px;
+		object-fit: cover;
+	}
+
+	&-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	&-cat {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin: 0.5rem 0 1rem 0;
+
+		a {
+			background-color: hsl(240deg 6% 87%);
+			color: #000;
+			border-radius: 5px;
+			padding: 0.2rem;
+			font-size: 11px;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	&-title {
+		font-size: 2.5rem;
+	}
+
+	&-foot {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+}

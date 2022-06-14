@@ -1,7 +1,14 @@
-const Posts = () => {
-  return (
-    <div>Posts</div>
-  )
-}
+import Post from './Post';
 
-export default Posts
+const Posts = () => {
+	return (
+		<div className="posts">
+			<Post />
+			<Post />
+			<Post />
+			<Post />
+		</div>
+	);
+};
+
+export default Posts;

@@ -1,6 +1,10 @@
+// .sidebar{
+//   &-container{
+//     width: 90%;
+//     margin: 0 auto;
+//   }
+// }
+
 .sidebar{
-  &-container{
-    width: 90%;
-    margin: 0 auto;
-  }
+  flex: 3;
 }
