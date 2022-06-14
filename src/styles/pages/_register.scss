@@ -1,0 +1,49 @@
+.register {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	margin: 1rem auto;
+	height: 100%;
+  
+	&-title {
+		font-size: 1.5rem;
+	}
+
+	&-login {
+		padding: 1rem 0;
+		font-size: 12px;
+		color: thistle;
+		a {
+			color: rgb(212, 142, 212);
+			cursor: pointer;
+		}
+	}
+
+	form {
+		display: grid;
+		gap: 1rem;
+		div {
+			label {
+				display: block;
+			}
+			input {
+				font-size: 12px;
+				padding: 0.2rem 1rem;
+				&:focus {
+					outline: transparent;
+				}
+			}
+		}
+	}
+
+	&-btn {
+		background-color: black;
+		color: #fff;
+		padding: 6px 12px;
+		border-radius: 4px;
+		cursor: pointer;
+		border: none;
+	}
+}
