@@ -25,14 +25,6 @@ const Post = () => {
 					distinctio, architecto maxime voluptatibus quae.
 				</p>
 				<div className="post-foot">
-					<div className="post-action">
-						<a href="">
-							<FontAwesomeIcon icon={faPenToSquare} />
-						</a>
-						<a href="">
-							<FontAwesomeIcon icon={faTrash} />
-						</a>
-					</div>
 					<p className="post-timing">June 6 2022</p>
 				</div>
 			</div>

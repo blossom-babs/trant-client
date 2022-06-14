@@ -3,7 +3,7 @@ import { Sidebar, SinglePost } from '../components';
 
 const Single = () => {
 	return (
-		<div className="singlePost">
+		<div className="single">
 			<Sidebar />
 			<SinglePost />
 		</div>

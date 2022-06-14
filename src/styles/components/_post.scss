@@ -7,6 +7,15 @@
 		display: flex;
 		gap: 1rem;
 		cursor: pointer;
+
+		a {
+			&:first-child {
+				color: #008000;
+			}
+			&:last-child {
+				color: #ff0000;
+			}
+		}
 	}
 
 	&-desc {

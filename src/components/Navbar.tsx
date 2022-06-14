@@ -14,12 +14,12 @@ const Navbar = () => {
         <li>Contact</li>
       </ul>
       {/* replace socal media with names */}
-      <ul>
-        <li><a href="http://"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-        <li><a href="http://"><FontAwesomeIcon icon={faTwitter} /></a></li>
-        <li><a href="http://"><FontAwesomeIcon icon={faInstagram} /></a></li>
-        <li><a href="http://"><FontAwesomeIcon icon={faEnvelope} /></a></li>
-        <li><a href="http://"><FontAwesomeIcon icon={faMicrophone} /></a></li>
+      <ul className="navbar-sm">
+        <li><a href="https://www.linkedin.com/in/blossom-babalola/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+        <li><a href="https://twitter.com/BlossomBabalola" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a></li>
+        <li><a href="https://www.instagram.com/techtalkwithblossom/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
+        <li><a href="http://" target="_blank"><FontAwesomeIcon icon={faEnvelope} /></a></li>
+        <li><a href="https://anchor.fm/techtalk-with-blossom" target="_blank"><FontAwesomeIcon icon={faMicrophone} /></a></li>
       </ul>
         </div>
     </div>
