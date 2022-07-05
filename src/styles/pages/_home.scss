@@ -1,9 +1,42 @@
 .home,
 .single {
-	display: flex;
 	width: 90%;
-	margin: 3rem auto;
+	margin: auto;
+
+	&__inner {
+		gap: 4rem;
+		display: flex;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+
+	&__searchbar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 3rem;
+		border-bottom: 4px dashed black;
+		width: 50%;
+		margin: 3rem auto;
+
+		input{
+			width: 300px;
+			border: none;
+			background: transparent;
+
+			&:focus, &:active{
+				outline: transparent;
+			}
+		}
+	}
+}
+
+.single {
+	display: flex;
 	gap: 4rem;
+	margin: 3rem auto;
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
 	}
