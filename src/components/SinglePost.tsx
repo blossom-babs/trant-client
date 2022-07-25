@@ -12,16 +12,16 @@ const SinglePost = () => {
     <div className="post-item">
       <h1 className="post-title">Post title</h1>
       <div className="post-cat">
-        <a>Leetcode</a>
-        <a>Data structures</a>
-        <a>Algorithms</a>
+        <button>Leetcode</button>
+        <button>Data structures</button>
+        <button>Algorithms</button>
       </div>
       <div className="post-foot">
         <div className="post-action">
-          <a href="">
+          <a href="/edit">
             <FontAwesomeIcon icon={faPenToSquare} />
           </a>
-          <a href="">
+          <a href="/delete">
             <FontAwesomeIcon icon={faTrash} />
           </a>
         </div>

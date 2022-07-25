@@ -3,7 +3,7 @@ const Login = () => {
 		<div className="register">
 			<h1 className="register-title">Login</h1>
 			<p className="register-login">
-				Don't have an account? <a href="#">Register</a>
+				Don't have an account? <a href="/register">Register</a>
 			</p>
 			<form>
 				<div>

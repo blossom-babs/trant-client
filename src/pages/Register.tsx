@@ -3,7 +3,7 @@ const Register = () => {
 		<div className="register">
 			<h1 className="register-title">Register</h1>
 			<p className="register-login">
-				Already have an account? <a href="#">Login</a>
+				Already have an account? <a href="/login">Login</a>
 			</p>
 			<form>
 				<div>

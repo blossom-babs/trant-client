@@ -1,8 +1,20 @@
 import { Posts, Sidebar } from '../components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Home = () => {
+	const [posts, setPosts] = useState([]);
+
+	useEffect(() => {
+		const fetchPosts = async() => {
+			const res = await axios.get('/posts')
+			setPosts(res.data)
+		}
+		fetchPosts()
+	}, []);
+
 	return (
 		<div className="home">
 			<div className="home__searchbar">
@@ -11,7 +23,7 @@ const Home = () => {
 			</div>
 			<div className="home__inner">
 				<Sidebar />
-				<Posts />
+				<Posts posts={posts}/>
 			</div>
 		</div>
 	);

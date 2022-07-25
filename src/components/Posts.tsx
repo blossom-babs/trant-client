@@ -1,12 +1,11 @@
 import Post from './Post';
 
-const Posts = () => {
+const Posts = (props: { posts: object[]; }) => {
 	return (
 		<div className="posts">
-			<Post />
-			<Post />
-			<Post />
-			<Post />
+			{props.posts.map((p: object) => (
+				<Post />
+			))}
 		</div>
 	);
 };

@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const Post = () => {
 	return (
@@ -12,9 +12,9 @@ const Post = () => {
 			<div className="post-item">
 				<h1 className="post-title">Post title</h1>
 				<div className="post-cat">
-					<a>Leetcode</a>
-					<a>Data structures</a>
-					<a>Algorithms</a>
+					<button>Leetcode</button>
+					<button>Data structures</button>
+					<button>Algorithms</button>
 				</div>
 				<p className="post-desc">
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
