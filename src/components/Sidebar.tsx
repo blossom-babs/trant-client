@@ -3,7 +3,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar-container">
       <h1>Categories</h1>
-      <ul>
+      <ul data-cy="available-cat">
         <li>Leetcode</li>
         <li>Daily Problem</li>
       </ul>
