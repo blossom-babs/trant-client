@@ -18,8 +18,10 @@ const Navbar = () => {
         <li><a href="https://www.linkedin.com/in/blossom-babalola/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></li>
         <li><a href="https://twitter.com/BlossomBabalola" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a></li>
         <li><a href="https://www.instagram.com/techtalkwithblossom/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a></li>
-        <li><a href="http://" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope} /></a></li>
+        <li><a href="https://" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope} /></a></li>
         <li><a href="https://anchor.fm/techtalk-with-blossom" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faMicrophone} /></a></li>
+        {/* youtube */}
+        {/* footer */}
       </ul>
         </div>
     </div>
