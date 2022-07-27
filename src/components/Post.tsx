@@ -3,7 +3,7 @@
 
 const Post = () => {
 	return (
-		<div className="post">
+		<div data-cy="post" className="post">
 			<img
 				className="post-img"
 				src="https://media.istockphoto.com/photos/lottery-picture-id95442265?b=1&k=20&m=95442265&s=170667a&w=0&h=fKu1DRGrbfXVXWHR5c0MlE2glGse5-l8DwoUrQH4UUA="
