@@ -3,15 +3,14 @@ import Post from './Post';
 interface HomeProps {
 	posts: object[];
 }
-const Posts = (posts: HomeProps) => {
-	console.log(posts)
+const Posts = ({ posts }: HomeProps) => {
 	return (
 		<div className="posts">
-			{/* {posts ? (
+			{posts.length > 1 ? (
 				posts.map((post: object) => <Post {...post} />)
 			) : (
 				<ErrorNoPost />
-			)} */}
+			)}
 		</div>
 	);
 };
