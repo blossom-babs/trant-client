@@ -5,16 +5,19 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Home = () => {
-	const [posts, setPosts] = useState([]);
+	const [posts, setPosts] = useState<object[]>([]);
 
 	useEffect(() => {
-		const fetchPosts = async() => {
-			const res = await axios.get('/posts')
-			setPosts(res.data)
-		}
-		fetchPosts()
+		const fetchPosts = async () => {
+			try {
+				const res = await axios.get('/posts');
+				setPosts(res.data);
+			} catch (error) {
+				console.log(error);
+			}
+		};
+		fetchPosts();
 	}, []);
-
 	return (
 		<div className="home">
 			<div className="home__searchbar">
@@ -23,7 +26,7 @@ const Home = () => {
 			</div>
 			<div className="home__inner">
 				<Sidebar />
-				<Posts posts={posts}/>
+				<Posts posts={posts} />
 			</div>
 		</div>
 	);

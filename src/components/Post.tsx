@@ -1,7 +1,7 @@
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 
-const Post = () => {
+const Post = (post: any) => {
 	return (
 		<div data-cy="post" className="post">
 			<img

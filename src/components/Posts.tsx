@@ -1,11 +1,25 @@
 import Post from './Post';
 
-const Posts = (props: { posts: object[]; }) => {
+interface HomeProps {
+	posts: object[];
+}
+const Posts = (posts: HomeProps) => {
+	console.log(posts)
 	return (
 		<div className="posts">
-			{props.posts.map((p: object) => (
-				<Post />
-			))}
+			{/* {posts ? (
+				posts.map((post: object) => <Post {...post} />)
+			) : (
+				<ErrorNoPost />
+			)} */}
+		</div>
+	);
+};
+
+export const ErrorNoPost = () => {
+	return (
+		<div>
+			<h1>No post to display.</h1>
 		</div>
 	);
 };
