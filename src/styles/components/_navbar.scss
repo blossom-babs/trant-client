@@ -4,30 +4,33 @@
   background-color: $primary;
   color: $fontColor;
   height: max-content;
-  padding: 1.25rem 0;
+  padding: .5rem 0;
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 999;
 
+  &-title {
+    font-size: 2.25rem;
+
+    span {
+      color: $primaryTheme;
+    }
+  }
+
   &-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    gap: 1.25rem;
     width: 90%;
     margin: 0 auto;
 
-    &.title {
-      font-size: 2.25rem;
-    }
   }
 
   ul {
     list-style-type: none;
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
 
     li {
       font-size: 1rem;
@@ -36,10 +39,10 @@
   }
 
 
-  &-sm{
-    li{
-      a{
-        color: #faebd7;
+  &-sm {
+    li {
+      a {
+        color: $fontColor;
       }
     }
   }
