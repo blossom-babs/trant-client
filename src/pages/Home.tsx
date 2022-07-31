@@ -25,7 +25,7 @@ const Home = () => {
 				<FontAwesomeIcon icon={faMagnifyingGlass} />
 			</div>
 			<div className="home__inner">
-				<Sidebar />
+				{/* <Sidebar /> */}
 				<Posts posts={posts} />
 			</div>
 		</div>
