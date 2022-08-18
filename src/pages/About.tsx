@@ -19,10 +19,19 @@ const About = () => {
 					<div>
 						<img src={Logo} alt="Trant Brand" />
 						<p>
-							Trant is a <em>portmanteau, </em> coined from two words Tech and
-							Rant. Trant is a public documentation of a developer journey in
-							tech - career, fails, wins, community, public learnings and giving
-							back to the ecosystem.
+							Trant is a{' '}
+							<em>
+								<a
+									href="https://www.britannica.com/topic/portmanteau-word"
+									target="_blank"
+									rel="noreferrer">
+									portmanteau, 
+								</a>
+							</em>
+							 coined from two words Tech and Rant. Trant is a public
+							documentation of a developer journey in tech - career, fails,
+							wins, community, public learnings and giving back to the
+							ecosystem.
 						</p>
 					</div>
 				</div>
@@ -33,57 +42,62 @@ const About = () => {
 						<p>
 							Hi, my name is Blossom. I am a software developer based out of
 							Ibadan, Nigeria. I write python, full stack Javascript and
-							typsecript. My core strength is in building web applications that
-							have a seamless user experience with emphasis on web
-							accessibility, responsiveness and security. I love to learn,
-							travel, and immerse myself in different cultures. I am currently
-							studying <a>data structures and algorithms</a>, building trant and{' '}
-							<a>my ow software</a>. You can find me in the pages of a book or
+							typsecript.
+							<br />
+							<br />
+							My core strength is in building web applications that have a
+							seamless user experience with emphasis on web accessibility,
+							responsiveness and security.
+							<br />
+							<br />I love to learn, travel, and immerse myself in different
+							cultures. I am currently studying
+							<a href='https://github.com/blossom-babs/Data-structures-and-algorithm' target='_blank'> data structures and algorithms, </a> building trant and
+							<a href='https://github.com/blossom-babs/' target='_blank'> my own software. </a> You can find me in the pages of a book or
 							any of my social media accounts:
 						</p>
 					</div>
 
-					<div>
+					<div className="about-icons">
 						<a
 							href="https://twitter.com/BlossomBabalola"
 							target="_blank"
 							rel="noreferrer">
-							<FontAwesomeIcon icon={faLinkedin} />
+							<FontAwesomeIcon size="3x" icon={faLinkedin} />
 						</a>
 						<a
 							href="https://anchor.fm/techtalk-with-blossom"
 							target="_blank"
 							rel="noreferrer">
-							<FontAwesomeIcon icon={faGithub} />
+							<FontAwesomeIcon size="3x" icon={faGithub} />
 						</a>
 						<a
 							href="https://anchor.fm/techtalk-with-blossom"
 							target="_blank"
 							rel="noreferrer">
-							<FontAwesomeIcon icon={faMicrophone} />
+							<FontAwesomeIcon size="3x" icon={faMicrophone} />
 						</a>
 						<a
 							href="https://anchor.fm/techtalk-with-blossom"
 							target="_blank"
 							rel="noreferrer">
-							<FontAwesomeIcon icon={faYoutube} />
+							<FontAwesomeIcon size="3x" icon={faYoutube} />
 						</a>
 						<a
 							href="https://twitter.com/BlossomBabalola"
 							target="_blank"
 							rel="noreferrer">
-							<FontAwesomeIcon icon={faInstagram} />
+							<FontAwesomeIcon size="3x" icon={faInstagram} />
 						</a>
 						<a
 							href="https://twitter.com/BlossomBabalola"
 							target="_blank"
 							rel="noreferrer">
-							<FontAwesomeIcon icon={faTiktok} />
+							<FontAwesomeIcon size="3x" icon={faTiktok} />
 						</a>
 					</div>
 				</div>
 
-				<p> For all business inquiries, please email me 🤝</p>
+				<b> For all business inquiries, please email me 🤝</b>
 				<p> blossombabalola@gmail.com</p>
 				{/* press kit */}
 			</div>

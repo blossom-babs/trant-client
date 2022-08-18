@@ -1,5 +1,5 @@
-.about{
-  width: 90%;
+.about {
+  width: 50%;
   margin: 0 auto;
   padding: 3rem 0;
   display: flex;
@@ -7,23 +7,54 @@
   align-items: center;
   text-align: center;
 
-  &-trant{
-    border-bottom: 1px solid #888;
-    padding-bottom: 3rem;
+  &-me {
+    padding-top: 3rem;
 
-    em{
-      color: red;
+    img {
+      width: 20%;
     }
 
-    h1{
-      font-size:2rem;
+    p {
+      padding-top: 1rem;
+    }
+  }
+
+  &-trant {
+    border-bottom: 1px solid #888;
+  }
+
+  &-trant,
+  &-me {
+    padding-bottom: 3rem;
+
+    em, a {
+      color: red;
+      text-decoration: none;
+      padding-right: .1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
       padding-bottom: 1rem;
     }
 
-    p{
+    p {
       width: 70%;
       margin: 0 auto;
       line-height: 1.8;
+    }
+  }
+
+  &-icons {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 30%;
+    margin: 0 auto;
+
+    a {
+      color: rgb(163, 75, 75);
     }
   }
 }
