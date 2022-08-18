@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+// poppins, lora, Josefin sans, nunito
 
-$fontOne: 'Josefin Sans',
-sans-serif;
-$fontTwo: 'Lora',
-serif;
-$fontHeading: 'Architects Daughter', cursive;
+$font-family: 'Nunito', sans-serif;
 $primary: #000000;
 $fontColor: #ffffff;
 $primaryTheme: #f6b93b;
@@ -20,7 +17,7 @@ body {
   margin: 0;
   background-color: #ffffff;
   background-image: url('../../public/images/asfalt-dark.png');
-  font-family: $fontHeading;
+  font-family: $font-family;
 
   @media screen and (min-width:1500px){
     width: 1140px;

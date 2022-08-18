@@ -1,0 +1,29 @@
+.about{
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &-trant{
+    border-bottom: 1px solid #888;
+    padding-bottom: 3rem;
+
+    em{
+      color: red;
+    }
+
+    h1{
+      font-size:2rem;
+      padding-bottom: 1rem;
+    }
+
+    p{
+      width: 70%;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+  }
+}
