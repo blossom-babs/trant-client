@@ -1,5 +1,14 @@
-import { Navbar } from './components';
-import { Home, Login, Register, Settings, Single, Write, NotFound, About } from './pages';
+import { Footer, Navbar } from './components';
+import {
+	Home,
+	Login,
+	Register,
+	Settings,
+	Single,
+	Write,
+	NotFound,
+	About
+} from './pages';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -16,6 +25,7 @@ function App() {
 				<Route path="/write" element={<Write />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
+			<Footer />
 		</Router>
 	);
 }
