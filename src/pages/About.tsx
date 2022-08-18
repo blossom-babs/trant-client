@@ -77,11 +77,11 @@ const About = () => {
 							<FontAwesomeIcon size="3x" icon={faMicrophone} />
 						</a>
 						<a
-							href="https://anchor.fm/techtalk-with-blossom"
+						href="https://anchor.fm/techtalk-with-blossom"
 							target="_blank"
 							rel="noreferrer">
 							<FontAwesomeIcon size="3x" icon={faYoutube} />
-						</a>
+						</a>	
 						<a
 							href="https://twitter.com/BlossomBabalola"
 							target="_blank"

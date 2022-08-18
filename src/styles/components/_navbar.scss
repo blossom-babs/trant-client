@@ -4,11 +4,15 @@
   background-color: $primary;
   color: $fontColor;
   height: max-content;
-  padding: .5rem 0;
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 999;
+  padding: 2rem 0;
+
+  &-logo{
+    width: 200px;
+  }
 
   &-hamburger {
     @media screen and (min-width: 760px) {
@@ -50,6 +54,11 @@
 
       a {
         color: $fontColor;
+        text-decoration: none;
+
+        &:hover{
+          text-decoration: wavy underline rgb(163, 75, 75);
+        }
       }
     }
   }
