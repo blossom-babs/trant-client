@@ -7,7 +7,11 @@ import {
 	faGithub
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faBars, faMicrophone } from '@fortawesome/free-solid-svg-icons';
+import {
+	faBars,
+	faMicrophone,
+	faSearch
+} from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import Logo from '../assets/trant-black-bg.png';
 
@@ -70,7 +74,10 @@ const Navbar = () => {
 						<a href="/about">About</a>
 					</li>
 					<li>
-						<a href="/contact">Contact</a>
+						<div className='navbar-inputField'>
+							<input type="text" name="" id="" placeholder="Press 's' to search " />
+							<FontAwesomeIcon icon={faSearch} />
+						</div>
 					</li>
 				</ul>
 				{/* replace socal media with names */}
