@@ -6,9 +6,11 @@ const date = () => {
 
 const Footer = () => {
 	return (
-		<p className="footer">
+    <div className="footer">
+		<p className="footer-body">
 			Copyright &copy; <span>{date()}</span> Trant
 		</p>
+    </div>
 	);
 };
 

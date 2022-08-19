@@ -1,4 +1,4 @@
-import { Posts, Sidebar } from '../components';
+import { Posts, RecentPost, Sidebar } from '../components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
@@ -20,12 +20,8 @@ const Home = () => {
 	}, []);
 	return (
 		<div className="home">
-			<div className="home__searchbar">
-				<input type="text" name="" id="" placeholder="Press l to search" />
-				<FontAwesomeIcon icon={faMagnifyingGlass} />
-			</div>
 			<div className="home__inner">
-				{/* <Sidebar /> */}
+				<RecentPost />
 				<Posts posts={posts} />
 			</div>
 		</div>
