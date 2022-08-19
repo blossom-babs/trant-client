@@ -27,6 +27,17 @@
 
     p {
       line-height: 1.5;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      line-height: 24px;
+    }
+
+    span{
+      color: blue;
+      font-style: italic;
     }
   }
 }

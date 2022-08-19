@@ -20,32 +20,44 @@ const TechPosts = () => {
 
 			<div className="techPosts-posts">
 				<article>
-					<img src={Img} alt="" />
-					<h2>Post title</h2>
+					<a href="">
+						<img src={Img} alt="" />
+						<h2>Post title</h2>
+					</a>
 				</article>
 				<article>
-					<img src={Img} alt="" />
-					<h2>Post title</h2>
+					<a href="">
+						<img src={Img} alt="" />
+						<h2>Post title</h2>
+					</a>
 				</article>
 				<article>
-					<img src={Img} alt="" />
-					<h2>Post title</h2>
+					<a href="">
+						<img src={Img} alt="" />
+						<h2>Post title</h2>
+					</a>
 				</article>
 				<article>
-					<img src={Img} alt="" />
-					<h2>Post title</h2>
+					<a href="">
+						<img src={Img} alt="" />
+						<h2>Post title</h2>
+					</a>
 				</article>
 				<article>
-					<img src={Img} alt="" />
-					<h2>Post title</h2>
+					<a href="">
+						<img src={Img} alt="" />
+						<h2>Post title</h2>
+					</a>
 				</article>
 				<article>
-					<img src={Img} alt="" />
-					<h2>Post title</h2>
+					<a href="">
+						<img src={Img} alt="" />
+						<h2>Post title</h2>
+					</a>
 				</article>
 			</div>
 
-			<div className='techPosts-redirect'>
+			<div className="techPosts-redirect">
 				<a href="">More Trant &rarr;</a>
 			</div>
 		</div>

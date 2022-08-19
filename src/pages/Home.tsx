@@ -1,4 +1,4 @@
-import { Posts, RecentPost, MainPosts, TechPosts } from '../components';
+import { Posts, RecentPost, MainPosts, TechPosts, RandomPosts } from '../components';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -22,7 +22,8 @@ const Home = () => {
 				<RecentPost />
 				<MainPosts />
 				<TechPosts />
-				<Posts posts={posts} />
+				<RandomPosts/>
+				{/* <Posts posts={posts} /> */}
 			</div>
 		</div>
 	);

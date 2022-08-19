@@ -16,6 +16,7 @@ const RecentPost = () => {
 							Animi debitis, ullam facilis reiciendis accusamus voluptas alias
 							iste fugit laborum cupiditate, incidunt distinctio quas.
 						</p>
+						<span>continue reading</span>
 					</div>
 				</div>
 			</a>

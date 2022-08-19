@@ -47,7 +47,7 @@ const MainPosts = () => {
 							adipisci inventore, nam labore quibusdam nulla? Deleniti illo
 							rerum reprehenderit recusandae? Qui, dolores aut.
 						</p>
-						<a href="">Read more</a>
+						<a href="">read more</a>
 					</article>
 					<article>
 						<h1>Post title</h1>
@@ -55,7 +55,7 @@ const MainPosts = () => {
 							Post content Lorem ipsum dolor, sit amet consectetur adipisicing
 							elit. Distinctio, ad
 						</p>
-						<a href="">Read more</a>
+						<a href="">read more</a>
 					</article>
 					<article>
 						<h1>Post title</h1>
@@ -63,7 +63,7 @@ const MainPosts = () => {
 							Post content Lorem ipsum dolor, sit amet consectetur adipisicing
 							elit. Distinctio, ad
 						</p>
-						<a href="">Read more</a>
+						<a href="">read more</a>
 					</article>
 				</div>
 

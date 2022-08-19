@@ -1,6 +1,11 @@
 .techPosts {
   padding: 3rem 0;
 
+  select{
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
   &-categories {
     display: flex;
     padding: 1rem;
@@ -15,8 +20,9 @@
       background: transparent;
       padding: 0.5rem 1rem;
       cursor: pointer;
-      
-      &:hover, &:focus{
+
+      &:hover,
+      &:focus {
         background-color: black;
         color: white;
       }
@@ -28,6 +34,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 1rem;
+    cursor: pointer;
+
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
 
     img {
       width: 200px;
@@ -37,13 +49,35 @@
   }
 
 
-  &-redirect{
+  &-redirect {
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
 
-    a{
+    a {
       font-size: 2rem;
       color: rgb(163, 75, 75);
     }
   }
+}
+
+.randomPosts {
+  &-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
 }
