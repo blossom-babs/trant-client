@@ -2,17 +2,14 @@ import Img from '../assets/postImg.jpg';
 
 const TechPosts = () => {
 	return (
-		<div>
-			<div>
-				<h1>
-					<a href="">Read more Tech Related posts from trant</a>
-				</h1>
-				<button>Data structures and algorithm</button>
+		<div className="techPosts">
+			<div className="techPosts-categories">
+				<button>All</button>
+				<button>DSA</button>
 				<button>React</button>
 				<button>Javascript</button>
 				<button>Frontend</button>
 				<button>CSS</button>
-				<button>All</button>
 				<select name="cars" id="cars">
 					<option value="volvo">Volvo</option>
 					<option value="saab">Saab</option>
@@ -21,19 +18,35 @@ const TechPosts = () => {
 				</select>
 			</div>
 
-			<div className='techPosts-posts'>
+			<div className="techPosts-posts">
 				<article>
 					<img src={Img} alt="" />
 					<h2>Post title</h2>
-					<p>
-						Post content Lorem ipsum dolor, sit amet consectetur adipisicing
-						elit. Soluta aperiam porro dolorum omnis cupiditate quis minima quam
-						ad ipsa unde assumenda, veniam eaque asperiores, rerum reprehenderit
-						aliquid, culpa tenetur necessitatibus impedit est corporis tempora
-						illum deleniti. Asperiores praesentium mollitia recusandae enim odio
-						non quasi animi dignissimos neque nostrum! Amet, unde.
-					</p>
 				</article>
+				<article>
+					<img src={Img} alt="" />
+					<h2>Post title</h2>
+				</article>
+				<article>
+					<img src={Img} alt="" />
+					<h2>Post title</h2>
+				</article>
+				<article>
+					<img src={Img} alt="" />
+					<h2>Post title</h2>
+				</article>
+				<article>
+					<img src={Img} alt="" />
+					<h2>Post title</h2>
+				</article>
+				<article>
+					<img src={Img} alt="" />
+					<h2>Post title</h2>
+				</article>
+			</div>
+
+			<div className='techPosts-redirect'>
+				<a href="">More Trant &rarr;</a>
 			</div>
 		</div>
 	);

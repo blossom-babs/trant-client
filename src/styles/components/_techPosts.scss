@@ -1,0 +1,49 @@
+.techPosts {
+  padding: 3rem 0;
+
+  &-categories {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    button {
+      border-radius: 5px;
+      border: 1px solid black;
+      color: black;
+      background: transparent;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      
+      &:hover, &:focus{
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+
+  &-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+
+  &-redirect{
+    display: flex;
+    justify-content: center;
+
+    a{
+      font-size: 2rem;
+      color: rgb(163, 75, 75);
+    }
+  }
+}

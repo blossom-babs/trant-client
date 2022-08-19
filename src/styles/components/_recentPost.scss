@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding-bottom: 3rem;
 
-  a{
+  a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
@@ -17,14 +17,15 @@
     img {
       width: 250px;
       height: 250px;
-      object-fit: contain;
+      object-fit: cover;
     }
 
-    h1{
-      font-size: 2rem;padding-bottom: 1rem;
+    h1 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
     }
 
-    p{
+    p {
       line-height: 1.5;
     }
   }
