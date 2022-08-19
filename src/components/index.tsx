@@ -1,8 +1,9 @@
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import Posts from "./Posts";
-import RecentPost from "./RecentPost";
-import Sidebar from "./Sidebar";
-import SinglePost from "./SinglePost";
+import Footer from './Footer';
+import MainPosts from './MainPosts';
+import Navbar from './Navbar';
+import Posts from './Posts';
+import RecentPost from './RecentPost';
+import SinglePost from './SinglePost';
+import TechPosts from './TechPosts';
 
-export{RecentPost, Footer, Navbar,Posts,Sidebar,SinglePost}
+export { TechPosts, MainPosts, RecentPost, Footer, Navbar, Posts, SinglePost };

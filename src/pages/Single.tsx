@@ -1,10 +1,8 @@
-import React from 'react';
-import { Sidebar, SinglePost } from '../components';
+import { SinglePost } from '../components';
 
 const Single = () => {
 	return (
 		<div className="single">
-			<Sidebar />
 			<SinglePost />
 		</div>
 	);

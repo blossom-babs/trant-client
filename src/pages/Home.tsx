@@ -1,6 +1,4 @@
-import { Posts, RecentPost, Sidebar } from '../components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { Posts, RecentPost, MainPosts, TechPosts } from '../components';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -22,6 +20,8 @@ const Home = () => {
 		<div className="home">
 			<div className="home__inner">
 				<RecentPost />
+				<MainPosts />
+				<TechPosts />
 				<Posts posts={posts} />
 			</div>
 		</div>

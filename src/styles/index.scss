@@ -2,11 +2,12 @@
 
 //components
 @use './components/navbar';
-@use './components/sidebar';
 @use './components/posts';
 @use './components/post';
 @use './components/singlePost';
 @use './components/footer';
+@use './components/recentPost';
+@use './components/mainPosts';
 
 //pages
 @use './pages/home';

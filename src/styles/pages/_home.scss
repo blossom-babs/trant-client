@@ -3,6 +3,10 @@
 	width: 90%;
 	margin: auto;
 
+	&__inner{
+		padding-top: 3rem;
+	}
+
 	&__searchbar {
 		display: flex;
 		align-items: center;

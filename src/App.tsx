@@ -7,7 +7,7 @@ import {
 	Single,
 	Write,
 	NotFound,
-	About
+	About, Blog
 } from './pages';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -17,6 +17,7 @@ function App() {
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/blog" element={<Blog />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/login" element={<Login />} />
 				<Route path="/register" element={<Register />} />
