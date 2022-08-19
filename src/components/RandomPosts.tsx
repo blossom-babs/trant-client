@@ -19,7 +19,7 @@ const RandomPosts = () => {
 
 			<div className="randomPosts-posts">
 				<article>
-					<a href="">
+					<a href="google.com">
 						<h2>Post title</h2>
 						<p>
 							Post content Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -32,7 +32,7 @@ const RandomPosts = () => {
 					</a>
 				</article>
 				<article>
-					<a href="">
+					<a href="google.com">
 						<h2>Post title</h2>
 						<p>
 							Post content Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -45,7 +45,7 @@ const RandomPosts = () => {
 					</a>
 				</article>
 				<article>
-					<a href="">
+					<a href="google.com">
 						<h2>Post title</h2>
 						<p>
 							Post content Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -58,7 +58,7 @@ const RandomPosts = () => {
 					</a>
 				</article>
 				<article>
-					<a href="">
+					<a href="google.com">
 						<h2>Post title</h2>
 						<p>
 							Post content Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -71,7 +71,7 @@ const RandomPosts = () => {
 					</a>
 				</article>
 				<article>
-					<a href="">
+					<a href="google.com">
 						<h2>Post title</h2>
 						<p>
 							Post content Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -84,7 +84,7 @@ const RandomPosts = () => {
 					</a>
 				</article>
 				<article>
-					<a href="">
+					<a href="google.com">
 						<h2>Post title</h2>
 						<p>
 							Post content Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -99,7 +99,7 @@ const RandomPosts = () => {
 			</div>
 
 			<div className="techPosts-redirect">
-				<a href="">More Random &rarr;</a>
+				<a href="google.com">More Random &rarr;</a>
 			</div>
 		</div>
 	);

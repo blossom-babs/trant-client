@@ -20,37 +20,37 @@ const TechPosts = () => {
 
 			<div className="techPosts-posts">
 				<article>
-					<a href="">
+					<a href="google.com" >
 						<img src={Img} alt="" />
 						<h2>Post title</h2>
 					</a>
 				</article>
 				<article>
-					<a href="">
+					<a href="google.com" >
 						<img src={Img} alt="" />
 						<h2>Post title</h2>
 					</a>
 				</article>
 				<article>
-					<a href="">
+					<a href="google.com" >
 						<img src={Img} alt="" />
 						<h2>Post title</h2>
 					</a>
 				</article>
 				<article>
-					<a href="">
+					<a href="google.com" >
 						<img src={Img} alt="" />
 						<h2>Post title</h2>
 					</a>
 				</article>
 				<article>
-					<a href="">
+					<a href="google.com" >
 						<img src={Img} alt="" />
 						<h2>Post title</h2>
 					</a>
 				</article>
 				<article>
-					<a href="">
+					<a href="google.com" >
 						<img src={Img} alt="" />
 						<h2>Post title</h2>
 					</a>
@@ -58,7 +58,7 @@ const TechPosts = () => {
 			</div>
 
 			<div className="techPosts-redirect">
-				<a href="">More Trant &rarr;</a>
+				<a href="google.com" >More Trant &rarr;</a>
 			</div>
 		</div>
 	);

@@ -6,7 +6,7 @@ const MainPosts = () => {
 					<h1>Featured Posts</h1>
 					<ul>
 						<li>
-							<a href="">
+							<a href="google.com">
 								<h2>Post title</h2>
 								<p>
 									Post content Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
@@ -20,13 +20,13 @@ const MainPosts = () => {
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="google.com">
 								<h2>Post title</h2>
 								<p>Post content Lorem ipsum dolor sit amet.</p>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="google.com">
 								<h2>Post title</h2>
 								<p>Post content Lorem ipsum dolor sit amet.</p>
 							</a>
@@ -47,7 +47,7 @@ const MainPosts = () => {
 							adipisci inventore, nam labore quibusdam nulla? Deleniti illo
 							rerum reprehenderit recusandae? Qui, dolores aut.
 						</p>
-						<a href="">read more</a>
+						<a href="google.com">read more</a>
 					</article>
 					<article>
 						<h1>Post title</h1>
@@ -55,7 +55,7 @@ const MainPosts = () => {
 							Post content Lorem ipsum dolor, sit amet consectetur adipisicing
 							elit. Distinctio, ad
 						</p>
-						<a href="">read more</a>
+						<a href="google.com">read more</a>
 					</article>
 					<article>
 						<h1>Post title</h1>
@@ -63,7 +63,7 @@ const MainPosts = () => {
 							Post content Lorem ipsum dolor, sit amet consectetur adipisicing
 							elit. Distinctio, ad
 						</p>
-						<a href="">read more</a>
+						<a href="google.com">read more</a>
 					</article>
 				</div>
 
@@ -71,19 +71,19 @@ const MainPosts = () => {
 					<h1>External Posts</h1>
 					<ul>
 						<li>
-							<a href="">
+							<a href="google.com">
 								<h2>Post title</h2>
 								<p>Post content Lorem ipsum dolor sit amet.</p>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="google.com">
 								<h2>Post title</h2>
 								<p>Post content Lorem ipsum dolor sit amet.</p>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="google.com">
 								<h2>Post title</h2>
 								<p>Post content Lorem ipsum dolor sit amet.</p>
 							</a>

@@ -51,8 +51,8 @@ const About = () => {
 							<br />
 							<br />I love to learn, travel, and immerse myself in different
 							cultures. I am currently studying
-							<a href='https://github.com/blossom-babs/Data-structures-and-algorithm' target='_blank'> data structures and algorithms, </a> building trant and
-							<a href='https://github.com/blossom-babs/' target='_blank'> my own software. </a> You can find me in the pages of a book or
+							<a rel="noreferrer" href='https://github.com/blossom-babs/Data-structures-and-algorithm' target='_blank'> data structures and algorithms, </a> building trant and
+							<a rel="noreferrer" href='https://github.com/blossom-babs/' target='_blank'> my own software. </a> You can find me in the pages of a book or
 							any of my social media accounts:
 						</p>
 					</div>

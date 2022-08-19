@@ -3,7 +3,7 @@ import Img from '../assets/postImg.jpg';
 const RecentPost = () => {
 	return (
 		<div className="recentPost">
-			<a href="">
+			<a href="google.com">
 				<div className="recentPost-inner">
 					<img src={Img} alt="" />
 					<div>

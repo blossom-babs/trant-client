@@ -20,9 +20,9 @@ const Blog = () => {
 
 				<div className="blog-post">
 					<article>
-						<a href="">
+						<a href="google.com">
 							<img src="" alt="" />
-							<h2></h2>
+							<h2>Post title</h2>
 							<p></p>
 						</a>
 					</article>
