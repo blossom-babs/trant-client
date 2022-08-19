@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 // poppins, lora, Josefin sans, nunito
 
-$font-family: 'Nunito', sans-serif;
+$font-family: 'Nunito',
+sans-serif;
 $primary: #000000;
 $fontColor: #ffffff;
 $primaryTheme: #f6b93b;
@@ -13,6 +14,22 @@ $primaryTheme: #f6b93b;
   font-size: 16px;
 }
 
+@mixin blackBtn {
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: black;
+    color: white;
+  }
+
+}
+
 body {
   margin: 0;
   background-color: #ffffff;
@@ -21,9 +38,10 @@ body {
   position: relative;
   min-height: 100vh;
 
-  @media screen and (min-width:1500px){
+  @media screen and (min-width:1500px) {
     width: 1140px;
     margin: 0 auto
   }
+
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }

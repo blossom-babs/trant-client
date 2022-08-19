@@ -1,7 +1,9 @@
+@use '../utilities' as utils;
+
 .techPosts {
   padding: 3rem 0;
 
-  select{
+  select {
     border: 1px solid black;
     border-radius: 5px;
   }
@@ -14,18 +16,7 @@
     margin-bottom: 1rem;
 
     button {
-      border-radius: 5px;
-      border: 1px solid black;
-      color: black;
-      background: transparent;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-
-      &:hover,
-      &:focus {
-        background-color: black;
-        color: white;
-      }
+      @include utils.blackBtn;
     }
   }
 
@@ -36,7 +27,7 @@
     row-gap: 1rem;
     cursor: pointer;
 
-    a{
+    a {
       text-decoration: none;
       color: inherit;
     }
@@ -67,7 +58,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 
-    a{
+    a {
       text-decoration: none;
       color: inherit;
     }

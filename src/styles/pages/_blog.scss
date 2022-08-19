@@ -1,0 +1,55 @@
+@use '../utilities' as utils;
+
+.blog {
+  padding: 3rem 0;
+  margin: 0 auto;
+  width: 90%;
+
+  &-action {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  &-btn {
+    display: flex;
+    gap: 1rem;
+
+    button{
+      @include utils.blackBtn;
+    }
+  }
+
+  &-post {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    margin: 2rem 0;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    span {
+      font-style: italic;
+      color: blue;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      line-height: 24px;
+    }
+  }
+}
