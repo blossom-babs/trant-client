@@ -18,20 +18,24 @@
       border-radius: 5px;
       padding: 5px;
       background: transparent;
-      color:#e58e26;
+      color: #e58e26;
     }
 
     svg {
       position: absolute;
       right: 1rem;
       top: .5rem;
+
+      @media screen and (max-width: 500px){
+        left: 11rem;
+      }
     }
   }
 
   &-logo {
     width: 100px;
 
-    @media screen and (min-width:1024px){
+    @media screen and (min-width:1024px) {
       width: 200px;
     }
   }
@@ -60,8 +64,7 @@
 
   }
 
-  &-navigation,
-  &-sm {
+  &-navigation {
     list-style-type: none;
     display: flex;
     gap: 1.5rem;
@@ -86,11 +89,37 @@
     }
   }
 
+  &-sm {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    @media screen and (max-width:500px) {
+      gap: .5rem;
+    }
+
+
+    li {
+      font-size: 1rem;
+      cursor: pointer;
+
+      a {
+        color: $fontColor;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: wavy underline rgb(163, 75, 75);
+        }
+      }
+    }
+  }
+
   &-mobile {
     background-color: $primary;
     position: absolute;
     left: 0;
-    width: 50%;
+    width: 90%;
     top: 4rem;
     padding: 1rem;
 
@@ -110,7 +139,7 @@
 
         a {
           &:hover {
-            text-decoration: underline wavy #e58e26;
+            text-decoration: wavy underline rgb(163, 75, 75);
           }
 
           text-decoration: none;

@@ -8,7 +8,7 @@ const Footer = () => {
 	return (
     <div className="footer">
 		<p className="footer-body">
-			Copyright &copy; <span>{date()}</span> Trant
+			Copyright &copy; <span>{date()} </span> Trant
 		</p>
     </div>
 	);
