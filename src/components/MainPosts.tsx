@@ -1,4 +1,19 @@
-const MainPosts = () => {
+interface Props{
+	title: string,
+	id: string,
+	description: string,
+	author: string,
+	categories: string[],
+	photo?: string,
+	createdAt: string
+}
+
+interface PostType{
+	posts: []
+}
+
+const MainPosts = ({posts}: PostType) => {
+	console.log('kkk', posts)
 	return (
 		<div className="mainPosts">
 			<div className="mainPosts-inner">
@@ -35,36 +50,9 @@ const MainPosts = () => {
 				</div>
 
 				<div className="mainPosts-other">
-					<article>
-						<h1>Post title</h1>
-						<p>
-							Post content Lorem ipsum dolor, sit amet consectetur adipisicing
-							elit. Distinctio, ad Lorem ipsum dolor sit amet consectetur,
-							adipisicing elit. Eos quam beatae, optio atque enim ducimus
-							possimus assumenda dolore distinctio nam libero inventore
-							molestiae placeat, corrupti minus maxime repellat saepe modi
-							voluptates? Molestias quidem dignissimos possimus reiciendis
-							adipisci inventore, nam labore quibusdam nulla? Deleniti illo
-							rerum reprehenderit recusandae? Qui, dolores aut.
-						</p>
-						<a href="google.com">read more</a>
-					</article>
-					<article>
-						<h1>Post title</h1>
-						<p>
-							Post content Lorem ipsum dolor, sit amet consectetur adipisicing
-							elit. Distinctio, ad
-						</p>
-						<a href="google.com">read more</a>
-					</article>
-					<article>
-						<h1>Post title</h1>
-						<p>
-							Post content Lorem ipsum dolor, sit amet consectetur adipisicing
-							elit. Distinctio, ad
-						</p>
-						<a href="google.com">read more</a>
-					</article>
+					
+				{/* {posts.length > 0 && posts.map((item) => console.log(item.title))} */}
+			
 				</div>
 
 				<div className="mainPosts-external">
