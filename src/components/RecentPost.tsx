@@ -1,25 +1,28 @@
 import Img from '../assets/postImg.jpg';
+import { PostInterface } from './MainPosts';
+interface Props {
+	post: [];
+}
 
-const RecentPost = () => {
+const RecentPost = ({ post }: Props) => {
 	return (
 		<div className="recentPost">
-			<a href="google.com">
-				<div className="recentPost-inner">
-					<img src={Img} alt="" />
-					<div>
-						<h1>Post title</h1>
-						<p>
-							Post body Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Quo vero quia labore, temporibus necessitatibus, voluptatem nobis
-							rerum enim quae sed fuga ab nisi debitis consequatur, libero qui
-							dolore. Labore, ullam quasi dignissimos voluptas vitae nulla?
-							Animi debitis, ullam facilis reiciendis accusamus voluptas alias
-							iste fugit laborum cupiditate, incidunt distinctio quas.
-						</p>
-						<span>continue reading</span>
-					</div>
-				</div>
-			</a>
+			{post.length > 0 ? (
+				post.map((post: PostInterface) => (
+					<a key={post.id} href="google.com">
+						<div className="recentPost-inner">
+							<img src={Img} alt={post.title} />
+							<div>
+								<h1>{post.title}</h1>
+								<p>{post.description}</p>
+								<span>continue reading</span>
+							</div>
+						</div>
+					</a>
+				))
+			) : (
+				<h1>'Loading...'</h1>
+			)}
 		</div>
 	);
 };

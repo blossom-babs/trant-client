@@ -4,15 +4,18 @@ import axios from 'axios';
 
 const Home = () => {
 	const [mainPosts, setMainPosts] = useState<[]>([]);
+	const [recentPost, setRecentPost] = useState<[]>([]);
+	const [error, setError] = useState({})
 
 	useEffect(() => {
 		const fetchPosts = async () => {
 			try {
 				const res = await axios.get('/posts');
-				console.log(res.data)
-				setMainPosts(res.data.slice(0, 3));
+				setMainPosts(res.data);
+				setRecentPost(res.data.slice(res.data.length - 1));
 			} catch (error) {
 				console.log(error);
+				setError(error)
 			}
 		};
 		fetchPosts();
@@ -21,10 +24,10 @@ const Home = () => {
 	return (
 		<div className="home">
 			<div className="home__inner">
-				<RecentPost />
+				<RecentPost post={recentPost} />
 				<MainPosts posts={mainPosts} />
 				<TechPosts />
-				<RandomPosts/>
+				<RandomPosts />
 			</div>
 		</div>
 	);

@@ -1,4 +1,4 @@
-interface Post {
+export interface PostInterface {
 	title: string;
 	id: string;
 	description: string;
@@ -19,40 +19,28 @@ const MainPosts = ({ posts }: Props) => {
 				<div className="mainPosts-featured">
 					<h1>Featured Posts</h1>
 					<ul>
-						<li>
-							<a href="google.com">
-								<h2>Post title</h2>
-								<p>
-									Post content Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-									amet consectetur, adipisicing elit. Esse, optio, libero illum
-									quas sed, consectetur earum quia debitis ex ducimus ad vitae
-									neque cumque sint rerum nisi nulla perferendis repellat
-									officia! Reprehenderit laudantium non doloribus aperiam, nemo
-									dolor. Aliquid, cumque architecto. Necessitatibus nihil libero
-									possimus sed amet facere ducimus eos?{' '}
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="google.com">
-								<h2>Post title</h2>
-								<p>Post content Lorem ipsum dolor sit amet.</p>
-							</a>
-						</li>
-						<li>
-							<a href="google.com">
-								<h2>Post title</h2>
-								<p>Post content Lorem ipsum dolor sit amet.</p>
-							</a>
-						</li>
+						{posts.length > 0 ? (
+							posts
+								.slice(posts.length - 4, posts.length - 1)
+								.map((item: PostInterface) => (
+									<li key={item.id}>
+										<a href="google.com">
+											<h2>{item.title}</h2>
+											<p>{item.description}</p>
+										</a>
+									</li>
+								))
+						) : (
+							<h1>Loading...</h1>
+						)}
 					</ul>
 				</div>
 
 				<div className="mainPosts-other">
 					{posts.length > 0 ? (
-						posts.map((item: Post) => (
+						posts.slice(0, 3).map((item: PostInterface) => (
 							<article key={item.id}>
-								<h2>{item.title}</h2>
+								<h1>{item.title}</h1>
 								<p>{item.description}</p>
 								<a href="">read more</a>
 							</article>
