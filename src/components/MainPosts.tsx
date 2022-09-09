@@ -1,19 +1,18 @@
-interface Props{
-	title: string,
-	id: string,
-	description: string,
-	author: string,
-	categories: string[],
-	photo?: string,
-	createdAt: string
+interface Post {
+	title: string;
+	id: string;
+	description: string;
+	author: string;
+	categories: string[];
+	photo?: string;
+	createdAt: string;
 }
 
-interface PostType{
-	posts: []
+interface Props {
+	posts: [];
 }
 
-const MainPosts = ({posts}: PostType) => {
-	console.log('kkk', posts)
+const MainPosts = ({ posts }: Props) => {
 	return (
 		<div className="mainPosts">
 			<div className="mainPosts-inner">
@@ -50,9 +49,19 @@ const MainPosts = ({posts}: PostType) => {
 				</div>
 
 				<div className="mainPosts-other">
-					
-				{/* {posts.length > 0 && posts.map((item) => console.log(item.title))} */}
-			
+					{posts.length > 0 ? (
+						posts.map((item: Post) => (
+							<article key={item.id}>
+								<h2>{item.title}</h2>
+								<p>{item.description}</p>
+								<a href="">read more</a>
+							</article>
+						))
+					) : (
+						<div>
+							<h1>Loading...</h1>
+						</div>
+					)}
 				</div>
 
 				<div className="mainPosts-external">
