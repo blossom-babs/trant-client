@@ -13,7 +13,7 @@ const Home = () => {
 				const res = await axios.get('/posts');
 				setMainPosts(res.data);
 				setRecentPost(res.data.slice(res.data.length - 1));
-			} catch (error) {
+			} catch (error:any) {
 				console.log(error);
 				setError(error)
 			}
